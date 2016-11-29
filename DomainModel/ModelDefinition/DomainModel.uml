@@ -24,7 +24,217 @@
         name="Person"
         isAbstract="false"
         isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="04723192-0cf4-4aed-a81c-50b5351a65fe"
+            isDerived="false"
+            sourceEndRoleName="Person"
+            targetEndRoleName="Kalender"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="30611199-c389-417e-96ab-505a6665053b"
+              LastKnownName="Kalender"
+              LastKnownLocation="DomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0492cb2e-5f33-4b4b-b4c1-86a4b352605d"
+                  name="Person"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aaab7fb3-58c6-4974-af34-0af27f0f6517"
+                  name="Kalender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="206da680-e17d-40b9-a9df-2a8b92de8189"
+        name="Hus"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f17e0f73-c69a-4eaa-a07f-383ad8878470"
+            isDerived="false"
+            sourceEndRoleName="Hus"
+            targetEndRoleName="Person"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1ffe7003-8551-45dd-9619-32c23c4e0e67"
+              LastKnownName="Person"
+              LastKnownLocation="DomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="213387d7-a094-4c49-ae88-4815b476fc9d"
+                  name="Hus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="390c40a9-1476-4a18-be2a-35af480c3bb3"
+                  name="Person"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2f51e9a3-2de1-4183-afa9-f00bae8b1789"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="86809a0d-399e-4d5a-98a8-28ee6b690a5a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="140e4261-8abe-4ae4-af77-860b9f871dcc"
+            isDerived="false"
+            sourceEndRoleName="Hus"
+            targetEndRoleName="Balance"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="932baa72-57d2-48e6-8b76-8e14b9188d8c"
+              LastKnownName="Balance"
+              LastKnownLocation="DomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e4b8666-f3f5-4946-9c4a-143707dfca82"
+                  name="Hus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="649c4499-bb9c-40d2-a2a6-885fa20b50b0"
+                  name="Balance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="932baa72-57d2-48e6-8b76-8e14b9188d8c"
+        name="Balance"
+        isAbstract="false"
+        isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="30611199-c389-417e-96ab-505a6665053b"
+        name="Kalender"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="42553eef-ae37-4aad-a20e-10721810aeb9"
+        name="Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="23c3c9dc-d845-4f40-a014-942829467de0"
+            isDerived="false"
+            sourceEndRoleName="Menu"
+            targetEndRoleName="Kalender"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="30611199-c389-417e-96ab-505a6665053b"
+              LastKnownName="Kalender"
+              LastKnownLocation="DomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f23fe79-9c32-4b1a-b253-d02c31a475cc"
+                  name="Menu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82200af9-2401-4c8f-a566-264e640fb98e"
+                  name="Kalender"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

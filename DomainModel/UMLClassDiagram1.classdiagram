@@ -18,6 +18,106 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="2d8903e2-f7ae-4f7f-add4-66f1b7f424e0" name="Person" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ffe7003-8551-45dd-9619-32c23c4e0e67" />
+        <targetEnds>
+          <association Id="64dc6dbe-4310-41fb-b1a6-02ec5c6159e5" isDerived="false" sourceEndRoleName="Person" targetEndRoleName="Kalender" isLeaf="false" isAbstract="false">
+            <classMoniker Id="01f34a81-ba65-4d32-8d6b-3b4436e260cf" LastKnownName="Kalender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="053e12b1-db53-44e8-ad43-4eab799aa12a" name="Person" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0492cb2e-5f33-4b4b-b4c1-86a4b352605d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a7e5cc6-bfb4-4e52-ad2d-49f951b18ccc" name="Kalender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aaab7fb3-58c6-4974-af34-0af27f0f6517" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04723192-0cf4-4aed-a81c-50b5351a65fe" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de8fd512-5023-4ebf-a3f3-4eb62aa92686" name="Hus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="206da680-e17d-40b9-a9df-2a8b92de8189" />
+        <targetEnds>
+          <association Id="468afa3c-7fcb-4a54-a284-a6f053db5501" isDerived="false" sourceEndRoleName="Hus" targetEndRoleName="Person" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2d8903e2-f7ae-4f7f-add4-66f1b7f424e0" LastKnownName="Person" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f233364-fd4e-4a90-ad4b-e489f5fc7b99" name="Hus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="213387d7-a094-4c49-ae88-4815b476fc9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17a78b78-fe9c-49c9-b29e-97aa9e933d3d" name="Person" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="b18f84b7-6ba6-4fc1-9bfb-a3f231891a4c" name="Lower" value="*">
+                      <elementDefinition Id="2f51e9a3-2de1-4183-afa9-f00bae8b1789" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b876455e-1697-4ea1-9e3b-05fb1c94e739" name="Upper" value="*">
+                      <elementDefinition Id="86809a0d-399e-4d5a-98a8-28ee6b690a5a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="390c40a9-1476-4a18-be2a-35af480c3bb3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f17e0f73-c69a-4eaa-a07f-383ad8878470" />
+          </association>
+          <association Id="b72cf70e-929c-4804-aa78-224bb0e864d5" isDerived="false" sourceEndRoleName="Hus" targetEndRoleName="Balance" isLeaf="false" isAbstract="false">
+            <classMoniker Id="80e0dd80-f21e-487a-906a-ba168b355a56" LastKnownName="Balance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a285b77f-c0d6-43e7-a9b3-707836ee9d1b" name="Hus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e4b8666-f3f5-4946-9c4a-143707dfca82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7325604-7c0f-4465-b948-5ff723dd0923" name="Balance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="649c4499-bb9c-40d2-a2a6-885fa20b50b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="140e4261-8abe-4ae4-af77-860b9f871dcc" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="80e0dd80-f21e-487a-906a-ba168b355a56" name="Balance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="932baa72-57d2-48e6-8b76-8e14b9188d8c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="01f34a81-ba65-4d32-8d6b-3b4436e260cf" name="Kalender" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="30611199-c389-417e-96ab-505a6665053b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="34f3ef31-f3b1-47f4-8cb4-2eb6ec48bd32" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42553eef-ae37-4aad-a20e-10721810aeb9" />
+        <targetEnds>
+          <association Id="0a15db1f-ea81-4850-a503-2c80bba430f8" isDerived="false" sourceEndRoleName="Menu" targetEndRoleName="Kalender" isLeaf="false" isAbstract="false">
+            <classMoniker Id="01f34a81-ba65-4d32-8d6b-3b4436e260cf" LastKnownName="Kalender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95c5e0c3-eab4-40f0-b146-a72cbbcd5d92" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f23fe79-9c32-4b1a-b253-d02c31a475cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a36aaad5-f0b0-479b-902d-f8fa9ea4ea2f" name="Kalender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82200af9-2401-4c8f-a566-264e640fb98e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23c3c9dc-d845-4f40-a014-942829467de0" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
